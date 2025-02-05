@@ -1,4 +1,4 @@
-#Strings arre for representing characters, names, words, etc.
+#Strings are for representing characters, names, words, etc.
 name= "divid"
 #integers represent whole numbers
 age: 14
@@ -8,8 +8,8 @@ wallet: 5.45
 graduated = False
 
 
-def add(x,y):
-    print(x + y)
+""" def add(x,y):
+    print(x + y) """
 #input asks the user a question and stores their response as a value
 #bill = float(input("How much did the bill cost?"))
 #print(type(bill))
@@ -17,11 +17,22 @@ def add(x,y):
 
 
 #lists
-students = ["Joanna", "Divid", "Deivid", "other Deivid", "Etan"]
+#students = ["Joanna", "Divid", "Deivid", "other Deivid", "Etan"]
 #this is similar to saying for i in range(5): print(students[i])
 """ print(students[2]) """
 """ for student in students:
     print(student) """
-moneys = [1,2,3,4,5,6]
+""" moneys = [1,2,3,4,5,6]
 total: 0
 for money in moneys:
+ """
+
+#tip calculator:
+def add(x,y):
+    print(x + y)
+bill = float(input("How much does the bill cost?"))
+print(type(bill))
+tip = float(input("How much is the tip?"))
+print(type(tip))
+add(bill,tip)
+
