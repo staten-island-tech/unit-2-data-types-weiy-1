@@ -50,4 +50,11 @@ for i in values:
 print(values[2])
 print(values[5]) """
 
+#determines length of word(s)
+""" string = (input("Input word(s):")) 
+print(type(string))
+length=len(string)
+print("The length of this/those word(s) is", length) """
 
+
+def login(password)
