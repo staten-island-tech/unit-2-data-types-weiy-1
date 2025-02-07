@@ -57,4 +57,57 @@ length=len(string)
 print("The length of this/those word(s) is", length) """
 
 
-def login(password)
+""" def login(password):
+    #if statement evaluates to true we go to next line
+    if password == "pasword123":
+        print("Logged in")
+    else:
+        print("Incorrect")
+x = input("what is the password?")
+login(x) """
+
+""" def grade(score):
+    if score >= 92:
+        print("A")
+    elif score >= 82:
+        print("B")
+    elif score >= 72:
+        print("C")
+    else:
+        print("F")
+x = int(input("What's the score?"))
+grade(x) """
+
+""" def gamble(age, id):
+    if age >= 21 and id == True:
+        print("Gamble away")
+    elif age >= 21 and id == False:
+        print("You need ID verification")
+    else:
+        print("You're too young") """
+
+""" raining = False #<-- change value (true or false)
+if raining == True:
+    print("dont go for a walk")
+if raining == False:
+    print("go for a walk")"""
+
+
+#mad libs
+food = (input("Input a food:"))
+print(type(food))
+name = (input("Input a celebrity's name"))
+print(type(name))
+verb = (input("Give me a past tense verb:"))
+print(type(verb))
+adjective = (input("Give me a adjective:"))
+print(type(adjective))
+noun = (input("Give me a name:"))
+print(type(noun))
+name2 = (input("Give me another name:"))
+print(type(name2))
+noun2 = (input("Give me another noun:"))
+print(type(noun2))
+verb2 = (input("Give me another verb:"))
+print(type(verb2))
+print("Me and my friend decided to get", food, ". Then, my friend", name, "forgot he had a class he had to go to. So he", verb, "to his class, but bumped into a", adjective, "looking man")
