@@ -92,23 +92,36 @@ if raining == True:
 if raining == False:
     print("go for a walk")"""
 
+#challenge 1
+""" number = (int(input("Input a number:")))
+print(type(number))
 
-#mad libs
+if number % 2 == 0:
+    print("This number is even")
+else:
+    print("This number is odd") """
 
-name = (input("Input a celebrity's name: "))
-print(type(name))
-food = (input("Input a food: "))
-print(type(food))
-verb = (input("Input a past tense verb: "))
-print(type(verb))
-adjective = (input("Input an adjective: "))
-print(type(adjective))
-noun = (input("Input a plural noun: "))
-print(type(noun))
-noun_2 = (input("Input another noun (place): "))
-print(type(noun_2))
-name_2 = (input("Input another name: "))
-print(type(name_2))
-verb_2 = (input("Input another verb: "))
-print(type(verb_2))
-print("Today,", name, "tried to eat some", food, "but then someone came to his doorstep and", verb, "his house. It was very", adjective, "and", name, "wanted to run until he was at a 14 miles distance from his house. The person apparently had chased", name, "since", name, "took 451", noun, "from", noun_2,)
+#challenge 2
+""" def add(x,y):
+    print(x + y)
+bill = float(input("Cost of bill: "))
+print(type(bill))
+print("Tip amounts:")
+print("1. 0% (Service was bad) ")
+print("2. 15% (Service was okay) ")
+print("3. 20% (Service was good) ")
+print("4. 25% (Service was great) ")
+tipchoice = input("Enter the number of your choice (between 1 and 4): ")
+if tipchoice == '1':
+    print("Your total will be", bill + bill*0)
+elif tipchoice == '2':
+    print("Your total will be", bill + bill*0.15)
+elif tipchoice == '3':
+    print("Your total will be", bill + bill*0.2)
+elif tipchoice == '4':
+    print("Your total will be", bill + bill*0.25)
+else:
+    print("Invalid choice (please choose a number between 1 and 4)") """
+
+
+#challenge 3
