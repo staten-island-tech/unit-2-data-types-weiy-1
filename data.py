@@ -125,3 +125,8 @@ else:
 
 
 #challenge 3
+def factors():
+    number = int(input("Enter a number: "))  
+    return sorted([i for i in range(1, number+1) if number % i == 0])
+    print(f"The factors of {number} is {factors}")
+print(factors())
