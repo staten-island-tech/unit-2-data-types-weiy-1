@@ -101,6 +101,7 @@ if number % 2 == 0:
 else:
     print("This number is odd") """
 
+
 #challenge 2
 """ def add(x,y):
     print(x + y)
@@ -125,8 +126,20 @@ else:
 
 
 #challenge 3
-def factors():
+""" def factors():
     number = int(input("Enter a number: "))  
     return sorted([i for i in range(1, number+1) if number % i == 0])
     print(f"The factors of {number} is {factors}")
-print(factors())
+print(factors()) """
+
+
+#challenge 4
+def gcf():
+    n1 = int(input("Enter 1st number:"))
+    n2 = int(input("Enter 2nd number:"))
+    factor1 = [i for i in range(1, n1 + 1) if n1 % i == 0]
+    factor2 = [i for i in range(1, n2 + 1) if n2 % i == 0]
+    common_factors = set(factor1) & set(factor2)
+    gcf_value = max(common_factors) if common_factors else None
+    print(f"The GCF of {n1} and {n2} is: {gcf_value}")
+gcf()
