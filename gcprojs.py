@@ -23,12 +23,15 @@ import random
 numbers = ['1','2','3','4','5','6','7','8','9','10']
 random_number = random.choice(numbers)
 guessed_number = input("Guess the number:")
-if guessed_number < random_number:  
-    print(input("Higher, try again:"))
-elif guessed_number > random_number:
-    print(input("Lower, try again:"))
-else:
+if guessed_number == random_number:  
     print("You guessed correctly")
+
+else:
+    if guessed_number > random_number:
+        print(input("Lower, try again:"))
+
+    elif guessed_number < random_number:
+        print(input("Higher, try again:"))
 
 
 
