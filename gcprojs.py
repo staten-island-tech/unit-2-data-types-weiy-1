@@ -23,26 +23,30 @@ import random
 numbers = ['1','2','3','4','5','6','7','8','9','10']
 random_number = random.choice(numbers)
 guessed_number = input("Guess the number:")
-if guessed_number == random_number:  
-    print("You guessed correctly")
 
-else:
-    if guessed_number > random_number:
-        print(input("Lower, try again:"))
+#wip delete after done
 
-    elif guessed_number < random_number:
-        print(input("Higher, try again:"))
+if guessed_number is random_number:  
+    input("You guessed correctly")
+
+elif guessed_number > random_number:
+    input("Lower, try again:")
+        
+else: guessed_number < random_number
+input("Higher, try again:")
 
 
-
-""" def grade(score):
-    if score >= 92:
-        print("A")
-    elif score >= 82:
-        print("B")
-    elif score >= 72:
-        print("C")
+#misc
+""" def skins(money, isAvailable, cost):
+    if isAvailable == False:
+        print("cant buy yet")
     else:
-        print("F")
-x = int(input("What's the score?"))
-grade(x) """
+        if money >= cost:
+            print("can buy")
+        else:
+            print("not enough money")
+
+skins(10, True, 5)
+ """
+
+

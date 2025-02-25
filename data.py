@@ -144,4 +144,12 @@ print(factors()) """
     print(f"The GCF of {number1} and {number2} is: {gcf}")
 gcf() """
 
-print(int(3 % 2))
+import turtle
+from turtle import *
+t = Turtle()
+
+t.shape('turtle')
+t.speed('fast')
+for i in range(8):
+    t.forward(100)
+    t.left(90)
