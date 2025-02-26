@@ -143,13 +143,3 @@ print(factors()) """
     gcf = max(common_factors) if common_factors else None
     print(f"The GCF of {number1} and {number2} is: {gcf}")
 gcf() """
-
-import turtle
-from turtle import *
-t = Turtle()
-
-t.shape('turtle')
-t.speed('fast')
-for i in range(8):
-    t.forward(100)
-    t.left(90)

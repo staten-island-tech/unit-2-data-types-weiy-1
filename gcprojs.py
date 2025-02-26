@@ -24,29 +24,13 @@ numbers = ['1','2','3','4','5','6','7','8','9','10']
 random_number = random.choice(numbers)
 guessed_number = input("Guess the number:")
 
-#wip delete after done
-
 if guessed_number is random_number:  
     input("You guessed correctly")
 
-elif guessed_number > random_number:
-    input("Lower, try again:")
-        
-else: guessed_number < random_number
-input("Higher, try again:")
+else: 
+    if guessed_number > random_number:
+        input("Lower, try again:")
 
-
-#misc
-""" def skins(money, isAvailable, cost):
-    if isAvailable == False:
-        print("cant buy yet")
-    else:
-        if money >= cost:
-            print("can buy")
-        else:
-            print("not enough money")
-
-skins(10, True, 5)
- """
-
+    else: guessed_number < random_number
+    input("Higher, try again:")
 
