@@ -12,7 +12,26 @@ skins(10, True, 5)
  """
 
 
-#english or french
-entered_text = input("Enter some English or French text:")
-for entered_text in entered_text:
-    if entered_text is "s" or "S":
+#english or french (not done)
+""" def lang():
+
+    French = 0
+    English = 0
+
+    sometext = input("Enter some English or French text:")
+    for letter in text:
+        if letter == "s" or letter == "S":
+            French = French + 1
+        elif letter == "t" or letter == "T":
+            English = English + 1
+    if French >= English:
+        print("This is probably French")
+    else:
+        print("This is probably English")
+lang() """
+
+#random
+x = 50
+while x >= 10:
+    print("Buy mcnugets")
+    x = x - 10

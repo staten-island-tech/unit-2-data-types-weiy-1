@@ -20,17 +20,23 @@ print("Today,", name, "tried to eat some", food, "but then someone came to his d
 
 #random numb generator
 import random
-numbers = ['1','2','3','4','5','6','7','8','9','10']
+numbers = [1,2,3,4,5,6,7,8,9,10]
 random_number = random.choice(numbers)
-guessed_number = input("Guess the number:")
 
-if guessed_number is random_number:  
-    input("You guessed correctly")
+wrong_numbers = []
 
-else: 
+guessed_number = int(input("Guess the number:"))
+
+while guessed_number != random_number:
     if guessed_number > random_number:
-        input("Lower, try again:")
+        wrong_numbers.append(guessed_number)
+        print(f"Number too big (You already guessed {wrong_numbers})")
+        guessed_number = int(input("Try lower:"))
 
-    else: guessed_number < random_number
-    input("Higher, try again:")
+    elif guessed_number < random_number:
+        wrong_numbers.append(guessed_number)
+        print(f"Number too small (You already guessed {wrong_numbers})")
+        guessed_number = int(input("Try higher:"))
 
+if guessed_number == random_number:
+    print("You guess correctly")
