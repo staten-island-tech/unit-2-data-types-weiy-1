@@ -134,12 +134,21 @@ print(factors()) """
 
 
 #challenge 4
-""" def gcf():
+def gcf():  #defines gcf as a function
     number1 = int(input("Enter 1st number:"))
     number2 = int(input("Enter 2nd number:"))
-    factor1 = [i for i in range(1, number1 + 1) if number1 % i == 0]
-    factor2 = [i for i in range(1, number2 + 1) if number2 % i == 0]
-    common_factors = set(factor1) & set(factor2)
-    gcf = max(common_factors) if common_factors else None
+    common_factors = []
+    list_of_factor1 = []        #stores the factors
+    list_of_factor2 = []
+    for i in range(1, number1 + 1): #starts at 1, keeps adding 1 to number1
+        if number1 % i == 0:    #divides number1 + 1 by i and if remainder=0, append to list1
+            list_of_factor1.append(i)
+    for i in range(1, number2 + 1): #starts at 1, keeps adding 1 to number2
+        if number2 % i == 0:    #divides number2 + 2 by i and if remainder=0, append to list2
+            list_of_factor2.append(i)
+    for i in list_of_factor1:
+        if i in list_of_factor2:        #checks for same numbers in both lists and if found, adds to common_factors list
+            common_factors.append(i)
+    gcf = max(common_factors)   #finds the highest value of common_factors list
     print(f"The GCF of {number1} and {number2} is: {gcf}")
-gcf() """
+gcf()

@@ -9,7 +9,12 @@
             print("not enough money")
 
 skins(10, True, 5)
- """
+"""
+
+""" x = 50
+while x >= 10:
+    print("Buy mcnugets")
+    x = x - 10 """
 
 
 #english or french (not done)
@@ -30,8 +35,3 @@ skins(10, True, 5)
         print("This is probably English")
 lang() """
 
-#random
-x = 50
-while x >= 10:
-    print("Buy mcnugets")
-    x = x - 10
