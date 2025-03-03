@@ -20,11 +20,11 @@ print("Today,", name, "tried to eat some", food, "but then someone came to his d
 
 #random numb generator
 import random
-numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+numbers = [1,2,3,4,5,6,7,8,9,10]
 wrong_numbers = []
 random_number = random.choice(numbers)
 
-guessed_number = int(input("Guess the number between 1 and 20: "))
+guessed_number = int(input("Guess the number between 1 and 10: "))
 
 while guessed_number != random_number:
     if guessed_number > random_number:
@@ -38,4 +38,5 @@ while guessed_number != random_number:
         guessed_number = int(input("Try higher: "))
 
 if guessed_number == random_number:
-    print("You guess correctly")
+    print("You guess correctly, the number was", random_number)
+    print("The numbers you guessed until the right one:", wrong_numbers)

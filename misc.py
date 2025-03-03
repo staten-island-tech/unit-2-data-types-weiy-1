@@ -18,7 +18,7 @@ while x >= 10:
 
 
 #english or french (not done)
-""" def lang():
+""" def language():
 
     French = 0
     English = 0
@@ -33,5 +33,5 @@ while x >= 10:
         print("This is probably French")
     else:
         print("This is probably English")
-lang() """
+language() """
 
