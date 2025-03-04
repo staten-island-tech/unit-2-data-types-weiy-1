@@ -20,7 +20,7 @@ print("Today,", name, "tried to eat some", food, "but then someone came to his d
 
 #random numb generator
 import random
-numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1,2]
 wrong_numbers = []
 random_number = random.choice(numbers)
 
@@ -38,5 +38,6 @@ while guessed_number != random_number:
         guessed_number = int(input("Try higher: "))
 
 if guessed_number == random_number:
+    wrong_numbers.append(random_number)
     print("You guess correctly, the number was", random_number)
-    print("The numbers you guessed until the right one:", wrong_numbers)
+    print("Your guess history:", wrong_numbers)

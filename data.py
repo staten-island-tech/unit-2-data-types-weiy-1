@@ -92,6 +92,8 @@ if raining == True:
 if raining == False:
     print("go for a walk")"""
 
+
+
 #challenge 1
 """ number = (int(input("Input a number:")))
 print(type(number))
@@ -126,29 +128,53 @@ else:
 
 
 #challenge 3
-""" def factors():
-    number = int(input("Enter a number: "))  
-    return sorted([i for i in range(1, number+1) if number % i == 0])
-    print(f"The factors of {number} is {factors}")
-print(factors()) """
+""" factors = []
+number = int(input("Enter a number: "))
+for i in range(1,number + 1):
+    if number % i == 0:
+        factors.append(i)
+print(f"The factors of {number} is {factors}") """
 
 
 #challenge 4
-def gcf():  #defines gcf as a function
+""" def gcf():  #defines gcf as a function
     number1 = int(input("Enter 1st number:"))
     number2 = int(input("Enter 2nd number:"))
     common_factors = []
-    list_of_factor1 = []        #stores the factors
+    list_of_factor1 = []        #list for store the factors
     list_of_factor2 = []
-    for i in range(1, number1 + 1): #starts at 1, keeps adding 1 to number1
-        if number1 % i == 0:    #divides number1 + 1 by i and if remainder=0, append to list1
+    for i in range(1, number1 + 1): #for anynumber/i between of i and number1, start at 1 and keep add 1 to number1
+        if number1 % i == 0:    #divide number1 + 1 by i and if remainder = 0 store fir list1
             list_of_factor1.append(i)
-    for i in range(1, number2 + 1): #starts at 1, keeps adding 1 to number2
-        if number2 % i == 0:    #divides number2 + 2 by i and if remainder=0, append to list2
+    for i in range(1, number2 + 1): #for anynumber/i in range of i and number2, starts at 1 keeps adding 1 to number2
+        if number2 % i == 0:    #divide number2 + 1 by i and if remainder = 0 store for list2
             list_of_factor2.append(i)
     for i in list_of_factor1:
-        if i in list_of_factor2:        #checks for same numbers in both lists and if found, adds to common_factors list
+        if i in list_of_factor2:        #check for same numbers in both lists and founded same numbers get add to common_factors list
             common_factors.append(i)
-    gcf = max(common_factors)   #finds the highest value of common_factors list
-    print(f"The GCF of {number1} and {number2} is: {gcf}")
-gcf()
+    gcf = max(common_factors)   #max find biggest number in common_factors list and define it as variable gcf
+    print(f"The GCF of {number1} and {number2} is {gcf}")
+
+gcf() """
+
+
+
+#mad libs
+""" name = (input("Input a celebrity's name: "))
+print(type(name))
+food = (input("Input a food: "))
+print(type(food))
+verb = (input("Input a past tense verb: "))
+print(type(verb))
+adjective = (input("Input an adjective: "))
+print(type(adjective))
+noun = (input("Input a plural noun: "))
+print(type(noun))
+noun_2 = (input("Input another noun (place): "))
+print(type(noun_2))
+name_2 = (input("Input another name: "))
+print(type(name_2))
+verb_2 = (input("Input another verb: "))
+print(type(verb_2))
+print("Today,", name, "tried to eat some", food, "but then someone came to his doorstep and", verb, "his house. It was very", adjective, "and", name, "started running until the house was 14.628 miles away. This person had chased", name, "since", name, "took 451", noun, "from", noun_2, "yesterday.", name_2, "saw", name, "running and wanted to", verb_2, name, "for stealing those 451", noun,".")
+ """
